@@ -1,0 +1,60 @@
+# Video mixin
+'TYPO3.Neos.NodeTypes:VideoMixin':
+  abstract: true
+  ui:
+    inspector:
+      groups:
+        video:
+          label: 'HTML5 Video'
+          position: 6
+  properties:
+    previewimage:
+      type: 'TYPO3\Media\Domain\Model\ImageInterface'
+      ui:
+        label: 'Video Poster Image'
+        reloadIfChanged: true
+        inspector:
+          group: 'video'
+          position: 50
+    mp4:
+      type: TYPO3\Media\Domain\Model\Asset
+      ui:
+        label: 'mp4 Video'
+        reloadIfChanged: true
+        inspector:
+          group: 'video'
+          position: 100
+    webm:
+      type: TYPO3\Media\Domain\Model\Asset
+      ui:
+        label: 'webm Video'
+        reloadIfChanged: true
+        inspector:
+          group: 'video'
+          position: 200
+    ogv:
+      type: TYPO3\Media\Domain\Model\Asset
+      ui:
+        label: 'ogv Video'
+        reloadIfChanged: true
+        inspector:
+          group: 'video'
+          position: 300
+    preload:
+      type: boolean
+      ui:
+        label: 'Preload'
+        group: 'video'
+        position: 400
+    responsive:
+      type: boolean
+      ui:
+        label: 'Preload'
+        group: 'video'
+        position: 500
+    classes:
+      type: string
+      ui:
+        label: 'Class - Tag'
+        group: 'video'
+        position: 600

@@ -1,0 +1,8 @@
+'TYPO3.Neos.NodeTypes:Html5Video':
+  superTypes:
+    'TYPO3.Neos:Content': true
+    'TYPO3.Neos.NodeTypes:VideoMixin': true
+  ui:
+    label: 'HTML5 Video'
+    icon: icon-play-sign
+    position: 350

@@ -1,0 +1,10 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Axovis.Neos.Html5Video': TRUE
+    nodeTypes:
+      groups:
+        video:
+          position: 400
+          label: 'HTML5 Video'

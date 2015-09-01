@@ -1,0 +1,19 @@
+/**
+ * Company: axovis GmbH
+ * User: Alexander Kappler
+ * Date: 16.06.15
+ */
+
+prototype(TYPO3.Neos.NodeTypes:Html5Video) {
+	previewImage = ${q(node).property('previewimage')}
+	mp4Video = ${q(node).property('mp4')}
+	ogvVideo = ${q(node).property('ogv')}
+	webmVideo = ${q(node).property('webm')}
+
+	// Render images in the carousel with a special template.
+	templatePath = 'resource://Axovis.Neos.SliderRevolution/Private/Templates/NodeTypes/Video.html'
+
+}
+
+
+
